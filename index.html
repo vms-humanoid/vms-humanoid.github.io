@@ -104,7 +104,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/icon-v4.png">
+  <link rel="icon" href="./static/images/icon-ai.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -123,35 +123,8 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">VMS: Learning Versatile Motion Skills for Humanoid Whole-Body Control</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><a>Anonymous</a></span>
-            <!-- <span class="author-block"><a href="https://xinzheliu.github.io/">Xinzhe Liu</a><sup>1,2*</sup>,</span>
-              <span class="author-block"><a href="#">Dewei Wang</a><sup>1,3*</sup>,</span>
-              <span class="author-block"><a href="#">Xuelong Li</a><sup>1†</sup></span> -->
+            <span class="author-block"><a>Anonymous Authors</a></span>
           </div>
-
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Institute of Artificial Intelligence (TeleAI), China Telecom</span>
-            <span class="author-block"><sup>2</sup>ShanghaiTech University</span>
-            <span class="author-block"><sup>3</sup>University of Science and Technology of China</span>
-            <span class="author-block"><sup>4</sup>Northwestern Polytechnical University</span>
-            <span class="author-block"><sup>5</sup>Tsinghua University</span>
-          </div> -->
-
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>*</sup>Equal Contribution</span>
-            <span class="author-block"><sup>†</sup>Corresponding Author</span>
-          </div> -->
-
-
-          <!-- <div class="image-container">
-            <img src="./static/images/teleai.png" alt="图片1">
-            <img src="./static/images/Logo_of_ShanghaiTech_University.svg" alt="图片2">
-            <img src="./static/images/ustc.png" alt="图片3">
-            <img src="./static/images/Seal_of_NWPU.png" alt="图片4">
-            <img src="./static/images/Tsinghua_University_Logo.svg.png" alt="图片5">
-          </div> -->
-
-
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -165,7 +138,7 @@
                   <span>arXiv</span>
                 </a>
               </span> -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="TODO"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -173,7 +146,7 @@
                   </span>
                   <span>Code (Coming Soon)</span>
                   </a>
-              </span>
+              </span> -->
 
             </div>
 
@@ -189,8 +162,8 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-2">Video</h2>
-          <video src="./static/videos/main_v2.mp4"  autoplay  muted loop playsinline controls width="30%"></video>
+        <h2 class="title is-2">Video  /TODO</h2>
+          <!-- <video src="./static/videos/main_v2.mp4"  autoplay  muted loop playsinline controls width="30%"></video> -->
       </div>
     </div>
 
@@ -202,7 +175,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Humanoid robots are promising to acquire various skills by imitating human behaviors. However, existing algorithms are only capable of tracking smooth, low-speed human motions, even with delicate reward and curriculum design. This paper presents a physics-based humanoid control framework, aiming to master highly-dynamic human behaviors such as Kungfu and dancing through multi-steps motion processing and adaptive motion tracking. For motion processing, we design a pipeline to extract, filter out, correct, and retarget motions, while ensuring compliance with physical constraints to the maximum extent. For motion imitation, we formulate a bi-level optimization problem to dynamically adjust the tracking accuracy tolerance based on the current tracking error, creating an adaptive curriculum mechanism. We further construct an asymmetric actor-critic framework for policy training. In experiments, we train whole-body control policies to imitate a set of highly-dynamic motions. Our method achieves significantly lower tracking errors than existing approaches and is successfully deployed on the Unitree G1 robot, demonstrating stable and expressive behaviors.
+            Learning versatile whole-body skills by tracking various human motions is a fundamental step toward general-purpose humanoid robots. This task is particularly challenging because a single policy must master a broad repertoire of motion skills while ensuring stability over long-horizon sequences. To this end, we present VMS, a unified whole-body controller that enables humanoid robots to learn diverse and dynamic behaviors within a single policy. Our framework integrates a hybrid tracking objective that balances local motion fidelity with global trajectory consistency, and an Orthogonal Mixture-of-Experts (OMoE) architecture that encourages skill specialization while enhancing generalization across motions. A segment-level tracking reward is further introduced to relax rigid step-wise matching, enhancing robustness when handling global displacements and transient inaccuracies. We validate VMS extensively in both simulation and real-world experiments, demonstrating accurate imitation of dynamic skills, stable performance over minute-long sequences, and strong generalization to unseen motions. These results highlight the potential of VMS as a scalable foundation for versatile humanoid whole-body control.
           </p>
         </div>
       </div>
@@ -219,14 +192,14 @@
 
           </p>
           <div style="display: flex; justify-content: center; align-items: center;">
-          <img style="max-width: 150%; max-height: 600px;" src="./static/images/method.png" alt="图片1">
+          <img style="max-width: 150%; max-height: 600px;" src="./static/images/framework.jpg" alt="图片1">
           </div>
           
         </div>
       </div> 
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
-          <h2 class="title is-2">Real World Experiments</h2>
+          <h2 class="title is-2">Real World Experiments  /TODO</h2>
         </div>
         <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
@@ -239,7 +212,7 @@
             align-items: center;  /* 垂直居中 */
           ">
         
-        <div class="video-item" style="width: 100%;">
+        <!-- <div class="video-item" style="width: 100%;">
           <div class="caption">Jump kick</div>
           <video src="./static/videos/Jump kick.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
         </div>
@@ -312,7 +285,7 @@
         <div class="video-item" style="width: 100%;">
           <div class="caption">Tai Chi</div>
           <video src="./static/videos/Tai Chi.mp4" autoplay muted loop playsinline controls style="width: 100%;"></video>
-        </div>
+        </div> -->
         
       </div>
       
@@ -323,36 +296,45 @@
           <h2 class="title is-2">Experiment Results</h2>
           <h2 class="title is-4">Main Results</h2>
           <p style="text-align: left;">
-          Main results comparing different methods across difficulty levels. PBHC consistently
-          outperforms deployable baselines and approaches oracle-level performance. Results are reported as
-          mean ±one standard deviation. Bold indicates methods within one standard deviation of the best
-          result, excluding MaskedMimic.
+           VMS outperforms ExBody2 and GMT across all metrics, achieving more accurate local tracking while effectively controlling global root positions. Unlike prior methods that rely on root velocity and suffer from global drift, VMS reduces both global and local errors, demonstrating superior accuracy and stability.
           </p>
           <div style="display: flex; justify-content: center; align-items: center;">
-          <img style="max-width: 100%; max-height: 600px;" src="./static/images/result1.jpg" alt="图片2">
+          <img style="max-width: 100%; max-height: 1000px;" src="./static/images/main.jpg" alt="图片2">
           </div>
           <br>
           <br>
-          <h2 class="title is-4">Ablation on Adaptive Motion Tracking</h2>
+          <h2 class="title is-4">Ablation on OMoE</h2>
           <p style="text-align: left;">
-            Ablation study comparing the adaptive motion tracking mechanism with fixed tracking
-factor variants. The adaptive mechanism consistently achieves near-optimal performance across all
-motions, whereas fixed variants exhibit varying performance depending on motions.
-          </p>
-          <div style="display: flex; justify-content: center; align-items: center;">
-          <img style="max-width: 100%; max-height: 600px;" src="./static/images/result2.jpg" alt="图片2">
-          </div>
-          <br>
-          <br>
-          <h2 class="title is-4">Sim-to-Real Result</h2>
+            OMoE outperforms standard MoE and MLP baselines, achieving lower tracking errors and better generalization. Its orthogonalized experts learn distinct skill subspaces, enabling efficient specialization and flexible composition across diverse motion types.          </p>
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+          <img style="max-width: 100%; max-height: 300px;" src="./static/images/tsne.jpg" alt="图1">
           <p style="text-align: left;">
-            Comparison of tracking performance of Tai Chi between real-world and simulation. The
-robot root is fixed to the origin since it’s inaccessible in real-world.
-          </p>
-          <div style="display: flex; justify-content: center; align-items: center;">
-          <img style="max-width: 100%; max-height: 600px;" src="./static/images/result3.jpg" alt="图片2">
+            VMS adapts expert usage to motion complexity—repetitive motions like walking activate few experts, variable motions like dancing engage many, and intermediate motions show distinct patterns—demonstrating efficient specialization and flexible skill composition.          </p>
+          <img style="max-width: 100%; max-height: 500px;" src="./static/images/weight.jpg" alt="图2">
           </div>
-          
+          <br>
+          <br>
+          <h2 class="title is-4">Ablation on Segment-level Reward</h2>
+          <p style="text-align: left;">
+            We visualize representative motions with global targets (yellow) and local tracking targets (red). In a fast run with a sharp turn, global tracking fails due to accumulated errors, and step-wise tracking collapses during the turn. For a side kick, global tracking overemphasizes height and falls, while step-wise tracking loses balance. VMS, using a short future window, achieves smoother transitions, preserves motion style, and maintains overall stability.          <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+          <img style="max-width: 100%; max-height: 600px;" src="./static/images/example.jpg" alt="图1">
+          <p style="text-align: left;">
+            Test motions grouped by duration show that baseline strategies degrade on longer motions, while VMS remains robust, maintaining strong performance across long-horizon tasks.          </p>
+          <img style="max-width: 100%; max-height: 500px;" src="./static/images/radar.jpg" alt="图2">
+          </div>
+          <br>
+          <br>
+          <h2 class="title is-4">Downstream Tasks</h2>
+          <p style="text-align: left;">
+            VMS demonstrates strong generalization across downstream applications. It can track text-to-motion instructions generated from natural language, enabling it to serve as a universal low-level controller for high-level planners. 
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+          <img style="max-width: 100%; max-height: 600px;" src="./static/images/text2motion.jpg" alt="图1">
+          <p style="text-align: left;">
+            Moreover, with minimal finetuning, VMS adapts to extreme out-of-distribution skills, including acrobatic and collision-prone motions, showing its practicality for edge cases.          </p>
+          <img style="max-width: 100%; max-height: 500px;" src="./static/images/finetune.jpg" alt="图2">
+          </div>
         </div>
   </div>
 </div>
@@ -363,10 +345,10 @@ robot root is fixed to the origin since it’s inaccessible in real-world.
 
 </section>
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>
+    <pre><code> -->
 
 </code></pre>
   </div>
